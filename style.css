@@ -11,6 +11,8 @@
     width: 80%;
     position: relative;
     margin: auto;
+    min-width: 650px;
+    min-height: 650px;
     
 }
 .right{
@@ -29,21 +31,28 @@
 .money{
     position: absolute;
     top:50%;
-    left:47%;
+    left:46%;
     transform: translate(-50%,-50%);
+    /* box-shadow: 15px 30px 35px rgb(0, 0,0,0.3); */
+    border-radius: 50%;
     background-size: cover;
+    perspective: 300px;
     animation-name: spin;
+    animation-duration: 2sn;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     animation: spin 2s infinite linear;
     transition:all 200ms ease-in-out;
     animation-fill-mode: both;
-    position: fixed;
+    /* animation-iteration-count: 3; */
+    
+    
     
 
 }
 
-.money:active{
-    transform: scaleX(0.9);
-}
+
 @keyframes spin {
     from {
       transform: rotateX(0deg); /* Başlangıçta dönme açısı 0 derece */
