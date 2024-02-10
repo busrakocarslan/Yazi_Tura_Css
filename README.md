@@ -1,0 +1,1 @@
+This is my first project where I use animation, I aim to combine it with JavaScript and make a coin toss game.

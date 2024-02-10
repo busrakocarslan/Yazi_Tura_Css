@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 80%;
+    position: relative;
+    margin: auto;
+    
+}
+.right{
+    border: 2px solid;
+    background-color: rgb(25, 25, 74);
+    height: 100vh;
+    width: 50%;
+}
+.left{
+    border: 2px solid;
+    background-color: rgb(108, 26, 99);
+    height: 100vh;
+    width: 50%;
+}
+
+.money{
+    position: absolute;
+    top:50%;
+    left:47%;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+    animation-name: spin;
+    animation: spin 2s infinite linear;
+    transition:all 200ms ease-in-out;
+    animation-fill-mode: both;
+    position: fixed;
+    
+
+}
+
+.money:active{
+    transform: scaleX(0.9);
+}
+@keyframes spin {
+    from {
+      transform: rotateX(0deg); /* Başlangıçta dönme açısı 0 derece */
+    }
+    to {
+      transform: rotateX(360deg);/* 360 derece tam bir dönüş yapana kadar dönsün*/
+    }
+  }
+    
+    
+.money img{
+    width: 100px;
+}
